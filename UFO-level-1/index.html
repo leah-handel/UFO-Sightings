@@ -14,14 +14,41 @@
             <p class="lead">Filter the table below to find the UFO sighting that best speaks to you</p>
         </div>
         <div class="row">
-            <div class="col-md-12 col-lg-3">
+            <div class="col-ms-12 col-lg-3">
                 <div class = "row pb-3">
                     <button type="button" class="btn btn-success btn-lg btn-block">Apply Filters</button>
                 </div>
                 <div class="form-group row">
-                    <label for="date-input" class="col-2 col-form-label">Date</label>
-                    <div class="col-10">
+                    <label for="date-input" class="col-3 col-form-label">Date</label>
+                    <div class="col-9">
                         <input class="form-control" type="date" id="date-input" value="2010-01-01" min="2010-01-01" max="2010-01-13">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="city-input" class="col-3 col-form-label">City</label>
+                    <div class="col-9">
+                        <input class="form-control" type="text" id="city-input" placeholder="quantico">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="state-input" class="col-3 col-form-label">State</label>
+                    <div class="col-9">
+                        <input class="form-control" type="text" id="state-input" placeholder="va">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="country-input" class="col-3 col-form-label">Country</label>
+                    <div class="col-9">
+                        <select class="form-control" id="country-input" placeholder="us">
+                            <option>us</option>
+                            <option>ca</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="shape-input" class="col-3 col-form-label">Shape</label>
+                    <div class="col-9">
+                        <input class="form-control" type="text" id="shape-input" placeholder="circle">
                     </div>
                 </div>
             </div>

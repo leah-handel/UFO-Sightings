@@ -998,3 +998,12 @@ var data = [{
     comments: "Bright orange object&#44 rapid speed and direction changes .."
   }
 ];
+
+
+var countries = data.map(d => d.country);
+var countryList = new Set(countries);
+console.log(countryList)
+
+var states = data.map(d => d.state);
+var stateList = new Set(states);
+console.log(stateList)

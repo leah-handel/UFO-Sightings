@@ -4,6 +4,10 @@ var tbody = d3.select("tbody");
 
 var button = d3.select("button");
 var dateField = d3.select("#date-input");
+var cityField = d3.select("#city-input");
+var stateField = d3.select("#state-input");
+var countryField = d3.select("#country-input");
+var shapeField = d3.select("#shape-input");
 
 function fillTable(sightings){
     sightings.forEach(function(sighting) {
