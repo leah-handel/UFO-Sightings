@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>UFO Finder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="static/bootstrap.min.css">
 </head>
 
 <body>
@@ -14,11 +14,19 @@
             <p class="lead">Filter the table below to find the UFO sighting that best speaks to you</p>
         </div>
         <div class="row">
-            <div class="col-md-12 col-lg-2">
-                Filter area!!
+            <div class="col-md-12 col-lg-3">
+                <div class = "row pb-3">
+                    <button type="button" class="btn btn-success btn-lg btn-block">Apply Filters</button>
+                </div>
+                <div class="form-group row">
+                    <label for="date-input" class="col-2 col-form-label">Date</label>
+                    <div class="col-10">
+                        <input class="form-control" type="date" id="date-input" placeholder="1/11/2011">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12 col-lg-10">
-                <table class="table table-info table-striped">
+            <div class="col-md-12 col-lg-9">
+                <table class="table table-success table-striped">
                     <thead class="thead-dark">
                         <tr>
                             <th>Date</th>
@@ -31,7 +39,7 @@
                         </tr>
                     </thead>
                     <tbody>
-
+                        
                     </tbody>
                 </table>
             </div>
@@ -41,6 +49,7 @@
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="static/js/data.js"></script>
     <script src="static/js/app.js"></script>
   </body>
