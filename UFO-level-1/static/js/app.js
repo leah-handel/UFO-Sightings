@@ -21,7 +21,7 @@ function handleClick(){
     var dateInput = moment(dateField.property("value"));
     console.log(dateField.property("value"));
     console.log(dateInput);
-    var filteredSightings = allSightings.filter(sighting => sighting.datetime == "1/5/2010");
+    var filteredSightings = allSightings.filter(sighting => moment(sighting.datetime, "M/D/YYYY").isSame(dateInput));
     fillTable(filteredSightings);
 }
 
