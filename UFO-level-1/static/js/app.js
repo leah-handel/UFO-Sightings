@@ -36,12 +36,20 @@ function handleClick(){
     d3.event.preventDefault();
     console.log("did get click")
 
-    var dateField = d3.select("#date-input");
+    var filteredSightings = allSightings
 
-    var dateInput = moment(dateField.property("value"));
-    console.log(dateField.property("value"));
-    console.log(dateInput);
-    var filteredSightings = allSightings.filter(sighting => moment(sighting.datetime, "M/D/YYYY").isSame(dateInput));
+    var dateField = d3.select("#date-input");
+    var dateString = dateField.property("value")
+
+    if (!(dateString=="")){
+        var dateInput = moment(dateString);
+        filteredSightings = filteredSightings.filter(sighting => moment(sighting.datetime, "M/D/YYYY").isSame(dateInput));
+    };
+
+   // var dateInput = moment(dateString);
+    //console.log(dateField.property("value"));
+    //console.log(dateInput);
+    //var filteredSightings = allSightings.filter(sighting => moment(sighting.datetime, "M/D/YYYY").isSame(dateInput));
 
     var cityField = d3.select("#city-input");
     var stateField = d3.select("#state-input");
