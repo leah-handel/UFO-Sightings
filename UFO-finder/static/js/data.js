@@ -1007,3 +1007,5 @@ console.log(countryList)
 var states = data.map(d => d.state);
 var stateList = new Set(states);
 console.log(stateList)
+
+//based on the number of unique values I decided to do a drop down for country but not state
