@@ -1,4 +1,4 @@
-# javascript-challenge
+# UFO Sightings
 
 ## General Info
 
