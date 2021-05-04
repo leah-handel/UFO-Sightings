@@ -1,6 +1,6 @@
 # UFO Sightings
 
-![ScreenShot](static/screenshot.jpg)
+![ScreenShot](static/screenshot.jpg?raw=true)
 
 ## General Info
 
