@@ -1,6 +1,6 @@
 # UFO Sightings
 
-![ScreenShot](static/screenshot.jpg?raw=true)
+<img width="990" alt="screenshot" src="https://user-images.githubusercontent.com/74382969/116955546-80076580-ac58-11eb-9926-be9dcc7129d2.png">
 
 ## General Info
 
