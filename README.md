@@ -1,5 +1,7 @@
 # UFO Sightings
 
+![ScreenShot](static/screenshot.jpg)
+
 ## General Info
 
 This project is a webpage that displays a table of information about a set of reported UFO sightings. The page takes user input to filter the table based on the date, city, state, country, where the sighting occured and the shape of the UFO.
